@@ -1,0 +1,53 @@
+.dark {
+    background-color: black;
+    color: white;
+}
+
+body {
+    background-color: #fbfafa;
+}
+
+.shop {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 10px;
+}
+
+.shopContainer {
+    box-shadow: 2px 2px 2px 1px black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    gap: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.shopContainer:hover {
+    box-shadow: 3px 3px 3px 2px black;
+    transform: scale(1.1);
+    background-color: #f5f2f2;
+}
+
+.shop img {
+    max-width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .shop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shop img {
+        max-width: 80%;
+    }
+
+    .shopContainer {
+        min-height: 20vh;
+    }
+}

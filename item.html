@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="item.css">
+</head>
+<body class="light">
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <a href="index.html"><h2>Navbar</h2></a>
+                <ul>
+                    <a href="item.html"><li>News</li></a>
+                    <a href="shop.html"><li>Shop</li></a>
+                    <a href="dashboard.html"><li>Dashboard</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="mobileNavbar">
+            <div class="mobileContainer">
+                <h2>Navbar</h2>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-list"
+                    viewBox="0 0 16 16"
+                    id="button"
+                    onclick="setDarkMode()"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                    />
+                </svg>
+                <div class="mobileDropdown" id="dropdown">
+                    <h3>Navbar</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <a href="item.html"><li>placeholder</li></a>
+                        <a href="shop.html"><li>placeholder</li></a>
+                        <a href="dashboard.html"><li>placeholder</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="svgContainer">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="42"
+                height="42"
+                fill="currentColor"
+                class="bi bi-moon"
+                viewBox="0 0 16 16"
+                onclick="setDarkMode()"
+            >
+                <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+            </svg>
+        </div>
+    </header>
+    <main>
+        <div class="mainItemPage">
+            <div class="mainItemContainer">
+                <img src="https://s6.uupload.ir/files/kamilogi_uud0.jpg" alt="placeholder">
+                <h3>hello</h3>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor perferendis explicabo earum esse, maiores quisquam consequuntur optio eum officiis ad nulla laborum quod officia, autem eius quasi eveniet minima atque commodi mollitia. Minus libero praesentium, illo sint suscipit, illum at, consequuntur inventore hic commodi distinctio doloribus! Aliquid quod magni officia. Minus natus nemo, incidunt autem quas doloremque libero dolore velit.</h4>
+            </div>
+            <aside>
+                <ul>
+                    <li>placeholder</li>
+                    <li>placeholder</li>
+                    <li>placeholder</li>
+                    <li>placeholder</li>
+                    <li>placeholder</li>
+                </ul>
+            </aside>
+        </div>
+        <div class="addComments">
+            <div class="addContainer">
+                <input type="text" name="addcommenrs" id="addComments" placeholder="Type Something....">
+                <button>Send</button>
+            </div>
+        </div>
+        <div class="comments">
+            <div class="commentsContainer">
+                <img src="https://s6.uupload.ir/files/kamilogi_uud0.jpg" alt="placeholder">
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam consequatur expedita tempore ad quos enim et numquam molestiae dicta animi deleniti, quibusdam totam consequuntur earum obcaecati sed velit quisquam, esse a nisi reprehenderit voluptatibus eaque veritatis. Adipisci, veritatis nostrum!</span>
+            </div>
+        </div>
+        <div class="mainItemMobile">
+            <div class="mainContainerMobile">
+                <img src="https://s6.uupload.ir/files/kamilogi_uud0.jpg" alt="placeholder">
+                <h3>title</h3>
+                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident facere asperiores quidem deleniti itaque? Excepturi harum, modi mollitia earum, adipisci natus culpa provident, unde quae voluptatibus minima! Dolorum, vero. Maxime.</h4>
+            </div>
+            <aside>
+                <ul>
+                    <li>placeholder</li>
+                    <li>placeholder</li>
+                    <li>placeholder</li>
+                    <li>placeholder</li>
+                    <li>placeholder</li>
+                </ul>
+            </aside>
+        </div>
+        <div class="addCommentsMobile">
+            <div class="addContainerMobile">
+                <input type="text" name="addcommenrs" id="addComments" placeholder="Type Something....">
+                <button>Send</button>
+            </div>
+        </div>
+        <div class="commentsMobile">
+            <div class="commentsContainerMobile">
+                <img src="https://s6.uupload.ir/files/kamilogi_uud0.jpg" alt="user avatar">
+                <div>
+                    <div class="commentAuthor">Username</div>
+                    <div class="commentText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, odio a fugit eius dolores eligendi possimus culpa expedita doloremque illo et distinctio labore dolorem deleniti dolorum, quibusdam magnam, impedit architecto.</div>
+                    <div class="commentActions">
+                        <button>Like</button>
+                        <button>Reply</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footerContainer">
+              <ul>
+                <li>placeholder</li>
+                <li>placeholder</li>
+                <li>placeholder</li>
+              </ul>
+              <ul>
+                <li>placeholder</li>
+                <li>placeholder</li>
+                <li>placeholder</li>
+              </ul>
+              <img src="https://s6.uupload.ir/files/kamilogi_uud0.jpg" alt="logo" />
+            </div>
+          </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

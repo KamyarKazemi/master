@@ -1,0 +1,73 @@
+.dark {
+    background-color: black;
+    color: white;
+}
+
+body {
+    background-color: #fbfafa;
+}
+
+.shopItem {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    grid-template-rows: auto;
+    gap: 10px 40px;
+    box-shadow: 2px 2px 2px 1px black;
+    background-color: #ffffff;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.shopItem:hover {
+    box-shadow: 3px 3px 3px 2px;
+}
+
+.shopItem img {
+    max-width: 100%;
+}
+
+.colors {
+    display: flex;
+}
+
+.sizes button {
+    margin: 10px 0 0 10px;
+    background-color: rgb(212, 238, 67);
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+
+.sizes button:hover {
+    transform: scale(1.1);
+    background-color: rgb(228, 80, 6);
+}
+
+.itemPrice {
+    margin: 20px 0 0 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.itemPrice button {
+    background-color: #ebebef;
+    box-shadow: 2px 2px 2px 1px #e4e1e1;
+    padding: 3px 30px;
+    border-radius: 10px;
+    transition: 0.1s ease-in-out;
+    border: none;
+}
+
+.itemPrice button:hover {
+    transform: scale(1.2);
+    background-color: rgb(231, 233, 240);
+    box-shadow: 3px 3px 3px 2px black;
+}
+
+@media only screen and (max-width: 600px) {
+    .shopItem {
+        grid-template-columns: repeat(1, 100%);
+    }
+}

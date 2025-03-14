@@ -1,0 +1,233 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: black;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #2b2bb0;
+    color: white;
+    padding: 7px 0;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 0 5px 0 0;
+    margin: 3px;
+    transition: 0.1s ease-in;
+    font-size: 1.1rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.container li {
+    margin: 0 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    transition: 0.2s ease-in-out;
+}
+
+.container select {
+    color: white;
+    background-color: #2b2bb0;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar:hover {
+    box-shadow: 5px 5px 5px 2px black;
+    margin: 0;
+    border-radius: 0px;
+    font-size: 1.2;
+}
+
+.container li:hover {
+    box-shadow: 5px 5px 5px 2px #ccc;
+    font-size: 1.2rem;
+}
+
+.mobileNavbar {
+    display: none;
+}
+
+.svgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 10px;
+    cursor: pointer;
+}
+
+.svgContainer > svg {
+    background-color: rgb(207, 82, 20);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.items {
+    margin: 50px 0 0 0;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 0;
+}
+
+.items img, .dark img {
+    max-width: 75%;
+    border-radius: 5px;
+}
+
+.MainContainer {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fdfdfd;
+    box-shadow: 2px 2px 2px 1px black;
+    padding: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.MainContainer > h3 {
+    margin: 15px 0;
+}
+
+.MainContainer:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px 2px black;
+    border-radius: 5px;
+}
+
+.MainContainer a {
+    color: black;
+}
+
+.footer {
+    margin: 50px 0 0 0;
+}
+
+.footer img {
+    max-width: 8%;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(211, 50, 10);
+    padding: 10px 0;
+}
+
+.footerContainer li {
+    line-height: 2.5;
+}
+
+.footerContainer ul {
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    header .navbar {
+        display: none;
+    }
+
+    .mobileNavbar {
+        display: block;
+        background-color: #2b2bb0;
+        color: white;
+        overflow: hidden;
+        padding: 10px 7px;
+    }
+
+    .mobileContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobileContainer h2, .mobileContainer svg {
+        margin: 0;
+    }
+
+    .mobileDropdown {
+        display: none;
+        position: absolute;
+        margin: 265px 0 0 80px;
+        background-color: #2b2bb0;
+        border-radius: 5px;
+        color: white;
+        text-align: right;
+        padding: 12px;
+        line-height: 1.8;
+    }
+
+    .mobileDropdown.visible {
+        display: block;
+    }
+
+    .svgContainer {
+        margin: 10px;
+    }
+
+    .items, .dark {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .MainContainer:hover {
+        transform: none;
+        box-shadow: 5px 5px 5px 2px black;
+        border-radius: 5px;
+    }
+
+    .footerContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer img {
+        max-width: 50%;
+        margin: 10px 0;
+    }
+
+    .footer ul {
+        margin: 10px 0;
+        text-align: center;
+}
+}

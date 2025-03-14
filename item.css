@@ -1,0 +1,308 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mainItemPage {
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.mainItemContainer {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    gap: 10px;
+    line-height: 1.2;
+}
+
+.mainItemContainer:hover {
+    box-shadow: 3px 3px 3px 3px black;
+}
+
+.mainItemContainer h3, .mainItemContainer h4 {
+    margin: 10px 0 0 0;
+}
+
+.mainItemContainer h4 {
+    max-width: 70%;
+    font-size: 1.3rem;
+}
+
+.mainItemContainer img {
+    max-width: 15%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 2px rgba(150, 9, 9, 0.532);
+}
+
+aside {
+    width: 250px;
+    background-color: #2c3e50; 
+    color: #ecf0f1; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside ul {
+    margin: 0;
+}
+
+aside ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #34495e; 
+    transition: background-color 0.3s ease;
+}
+
+aside ul li:last-child {
+    border-bottom: none; 
+}
+
+aside ul li:hover {
+    background-color: #34495e; 
+    cursor: pointer;
+}
+
+.addComments {
+    margin: 20px 10px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.addContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.addContainer input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.addContainer input:focus {
+    border-color: #415b75;
+    box-shadow: 0 0 5px rgba(65, 91, 117, 0.5);
+}
+
+.addContainer button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #415b75;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.addContainer button:hover {
+    background-color: #34495e;
+    transform: scale(1.05);
+}
+
+.comments {
+    margin: 20px 10px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.commentsContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.commentsContainer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.commentsContainer span {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.mainItemMobile {
+    display: none;
+}
+
+.addCommentsMobile {
+    display: none;
+}
+
+.commentsMobile {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainItemPage, .addComments, .comments {
+        display: none;
+    }
+
+    .mainItemMobile {
+        display: block;
+        margin: 30px 10px 10px 10px;
+        line-height: 1.2;
+        background-color: #fdfdfd;
+        box-shadow: 1px 1px 1px 1px black;
+        border-radius: 5px;
+        transition: 0.2s ease-in-out;
+        padding: 10px;
+    }
+
+    .mainItemMobile:hover {
+        box-shadow: 3px 3px 3px 3px black;
+    }
+
+    .mainItemMobile img {
+        max-width: 50%;
+        border-radius: 5px;
+    }
+
+    .mainItemMobile h4 {
+        font-size: 0.9rem;
+    }
+
+    .mainContainerMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .mainItemMobile aside {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .addCommentsMobile {
+        display: block;
+        background-color: #fdfdfd;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .addContainerMobile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .addContainerMobile input {
+        max-width: 70%;
+        flex: 1;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    .addContainerMobile input:focus {
+        border-color: #415b75;
+        box-shadow: 0 0 5px rgba(65, 91, 117, 0.5);
+    }
+
+    .addContainerMobile button {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #415b75;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    }
+    
+    .addContainerMobile button:hover {
+        background-color: #34495e;
+    }
+    
+    .commentsMobile {
+        display: block;
+        padding: 10px;
+        background-color: #fdfdfd;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin: 10px;
+        max-width: 100%;
+    }
+
+    .commentsContainerMobile {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .commentsContainerMobile img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .commentsContainerMobile span {
+        flex: 1;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        color: #333;
+        word-wrap: break-word;
+    }
+
+    .commentsContainerMobile .commentAuthor {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .commentsContainerMobile .commentText {
+        font-size: 0.8rem;
+        color: #555;
+    }
+
+    .commentsContainerMobile .commentActions {
+        display: flex;
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    .commentsContainerMobile .commentActions button {
+        background: none;
+        border: none;
+        color: #555;
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+
+    .commentsContainerMobile .commentActions button:hover {
+        color: #000;
+    }
+}
